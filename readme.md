@@ -1,5 +1,5 @@
 # Context-aware Membership Inference Attacks against Pre-trained Models
-[![Webpage](https://img.shields.io/badge/🌐-Webpage-blue)](URL_TO_BE_PROVIDED) [![Paper](https://img.shields.io/badge/📄-Paper-red)](URL_TO_BE_PROVIDED)
+[![Webpage](https://img.shields.io/badge/🌐-Webpage-blue)](https://hongyanchang.com/camia/) [![Paper](https://img.shields.io/badge/📄-Paper-red)](URL_TO_BE_PROVIDED)
 
 This repository contains the official code for the paper "Context-aware Membership Inference Attacks against Pre-trained Models", accepted at the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025).
 
@@ -26,6 +26,19 @@ pip install -r requirements.txt
 ### Running All Attacks
 
 - **`run.sh`**: Execute all attacks using the provided bash script
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@article{chang2024context,
+  title={Context-aware membership inference attacks against pre-trained large language models},
+  author={Chang, Hongyan and Shamsabadi, Ali Shahin and Katevas, Kleomenis and Haddadi, Hamed and Shokri, Reza},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2025}
+}
+```
 
 ## Acknowledgements
 
