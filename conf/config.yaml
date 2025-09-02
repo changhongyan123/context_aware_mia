@@ -1,0 +1,90 @@
+openai_config: null
+
+ref_config:
+  model: "stabilityai/stablelm-base-alpha-3b-v2"
+
+neighborhood_config:
+  model: bert
+  n_perturbation_list: [25]
+  pct_words_masked: 0.3
+  span_length: 2
+  dump_cache: false
+  load_from_cache: true
+  neighbor_strategy: random
+
+env_config: 
+  results: results_new
+  device: cuda
+  device_aux: cuda
+  tmp_results: tmp_results
+  cache_dir: cache
+  device_map: auto
+
+incontext_config:
+  model: gpt2-xl
+  dataset: repeat
+  num_seeds: 1
+  num_shots: 0
+  subsample_test_set: 100
+  api_num_log_prob: 100
+  bs: null
+  use_saved_results: false
+  approx: false
+  prompt_prefix: null
+  q_prefix: null
+  a_prefix: null
+  label_dict: null
+  inv_label_dict: null
+  task_format: null
+  num_tokens_to_predict: null
+  template: null
+  prompt_func: null
+  single_prompt_func: null
+  
+
+experiment_name: pythia160_deduped_dm_github_ngram_7_0.2
+base_model: EleutherAI/pythia-160m-deduped
+dataset_member: the_pile
+dataset_nonmember: the_pile
+min_words: 100
+max_words: 200
+max_tokens: 512
+max_data: 100000
+output_name: unified_mia
+specific_source: wikipedia_(en)_ngram_7_0.2
+n_samples: null
+blackbox_attacks: ["loss"]
+dump_cache: false
+load_from_hf: true
+revision: null
+presampled_dataset_member: null
+presampled_dataset_nonmember: null
+dataset_key: null
+pretokenized: false
+token_frequency_map: null
+full_doc: false
+max_substrs : 20
+load_from_cache: false
+random_seed: 0
+fpr_list: [0.001, 0.01]
+tok_by_tok: False
+tokenization_attack: false
+quantile_attack: false
+num_samples: 10000
+
+max_words_cutoff: true
+batch_size: 50 
+chunk_size: 20
+scoring_model_name: null
+top_k: 40
+do_top_k: false
+top_p: 0.96
+do_top_p: false
+pre_perturb_pct: 0.0
+pre_perturb_span_length: 5
+
+# config for min_k attack.
+min_k_k: 0.2 
+min_k_window: 1
+min_k_strid: 1
+
