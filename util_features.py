@@ -522,6 +522,6 @@ def select_features_based_on_fs(
         selector = RFECV(estimator, step=1, cv=5, min_features_to_select=num_features)
         selector.fit(x_attack_train, y_attack_train)
     elif method == "all":
-        # return True for all fetures
+        # return True for all features
         return np.ones(x_attack_train.shape[1], dtype=bool)
     return selector.get_support()

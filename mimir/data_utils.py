@@ -236,7 +236,7 @@ class Data:
                         new_data.append(x)
                 data = new_data
 
-            # print stats about remainining data
+            # print stats about remaining data
             print(f"Total number of samples: {len(data)}")
             print(f"Average number of words: {np.mean([len(x.split()) for x in data])}")
 
