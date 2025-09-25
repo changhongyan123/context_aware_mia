@@ -42,4 +42,4 @@ If you use this code in your research, please cite our paper:
 
 ## Acknowledgements
 
-This code is based on the [MIMIR codebase](https://github.com/grafana/mimir) under an MIT license. 
+This code is based on the [MIMIR codebase](https://github.com/iamgroot42/mimir) under an MIT license. 
