@@ -17,14 +17,14 @@ class MinKPlusPlusAttack(Attack):
     def _attack(self, document, probs, tokens=None, **kwargs):
         """
         Min-K%++ Attack. 
-        Gets token probabilties, normalize with the mean and std over the whole categorical distribution,
+        Gets token probabilities, normalize with the mean and std over the whole categorical distribution,
         and returns normalized likelihood when computed over top k% of ngrams.
         """
         # Hyper-params specific to min-k attack
         k: float = kwargs.get("k", 0.2)
         all_probs = kwargs.get("all_probs", None)
 
-        # these are all log probabilites
+        # these are all log probabilities
         target_prob, all_probs = (
             (probs, all_probs)
             if (probs is not None and all_probs is not None)

@@ -380,7 +380,7 @@ class ReferenceModel(Model):
 
 class QuantileReferenceModel(Model):
     """
-        Wrapper for referenc model, specifically used for quantile regression
+        Wrapper for reference model, specifically used for quantile regression
     """
     def __init__(self, config: ExperimentConfig, name: str):
         super().__init__(config)

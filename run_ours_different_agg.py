@@ -165,7 +165,7 @@ if __name__ == "__main__":
         else:
             with open(res_path, "rb") as f:
                 all_features = pickle.load(f)
-            x_approxiamte_entropy = all_features["x_approxiamte_entropy"]
+            x_approximate_entropy = all_features["x_approximate_entropy"]
             x_slope_signal = all_features["x_slope_signal"]
             extracted_features_raw_single = all_features["extracted_features_single"]
             extracted_features_copied = all_features["extracted_features_copied"]
@@ -208,8 +208,8 @@ if __name__ == "__main__":
             feature_groups.append(feature_idx)
         feature_idx += 1
 
-        extracted_features_single["approximate_entropy"] = x_approxiamte_entropy
-        for _ in range(x_approxiamte_entropy.shape[0]):
+        extracted_features_single["approximate_entropy"] = x_approximate_entropy
+        for _ in range(x_approximate_entropy.shape[0]):
             feature_groups.append(feature_idx)
         feature_idx += 1
 

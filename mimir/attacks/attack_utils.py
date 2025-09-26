@@ -84,7 +84,7 @@ def get_roc_metrics(
     # Make sure the members are positive class (larger values, so negate the raw MIA scores)
     total_preds = np.array(total_preds) * -1
     # Assign label '0' to members for computation, since sklearn
-    # expectes label '0' data to have lower values to get assigned that label
+    # expects label '0' data to have lower values to get assigned that label
     # which is true for our attacks (lower loss for members, e.g.)
     total_labels = [1] * len(preds_member_) + [0] * len(preds_nonmember_)
     fpr, tpr, thresholds = roc_curve(total_labels, total_preds)
